@@ -15,7 +15,7 @@ function MovieApp(){
 
 const searchMovie=()=>{
 
-  let Api="http://www.omdbapi.com/?apikey=81b38455&t=";
+  let Api="https://www.omdbapi.com/?apikey=81b38455&t=";
 
      setLoader(true)
 
