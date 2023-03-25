@@ -131,7 +131,12 @@ console.log(moviearray)
       }
      else
       {
-     return <div><h5>Sorry😢,It seems like this contain is not available in our API !!</h5></div>
+     return <div>
+      
+      <h5>Sorry😢,It seems like this contain is not available in our API !!</h5>
+      <h5>Search with another movie title👌.</h5>
+     
+     </div>
       }
     })
 }
