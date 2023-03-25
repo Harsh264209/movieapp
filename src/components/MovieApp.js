@@ -26,6 +26,7 @@ const searchMovie=()=>{
     
      .then(function(data){   
 
+
 setLoader(false)
 
 let moviearray=[]
@@ -45,10 +46,21 @@ let moviearray=[]
       moviearray.push(movie);
       setInfo(moviearray)
 
+
+
 console.log(moviearray)
 
+ if (movie.title == undefined)
+ {
+  console.log('Not found')
+ }
 
     console.log(data)
+
+
+
+
+
      })
 
 
@@ -111,9 +123,16 @@ console.log(moviearray)
 
 {
 
-    info.map((movie)=>{
+    info.map((movie)=>{ 
 
+      if(movie.title != undefined)
+      {
       return <MovieInfo title={movie.title} year={movie.year}   img={movie.poster} plot={movie.plot} actors={movie.actors}  director={movie.director}  boxoffice={movie.boxoffice} imdb={movie.imdb} awards={movie.awards}/>
+      }
+     else
+      {
+     return <div><h5>Sorry😢,It seems like this contain is not available in our API !!</h5></div>
+      }
     })
 }
 
