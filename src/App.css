@@ -27,12 +27,185 @@
 .App-link {
   color: #61dafb;
 }
+body{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  background: rgb(11,9,9);
+background: linear-gradient(90deg, rgba(11,9,9,1) 17%, rgba(4,3,3,1) 30%, rgba(9,8,8,1) 40%, rgba(11,10,10,1) 52%, rgba(16,15,15,1) 61%, rgba(47,44,44,1) 87%, rgba(52,49,49,1) 100%, rgba(32,26,26,1) 100%, rgba(0,0,0,1) 100%, rgba(51,40,49,1) 100%);
+ 
+color: white;
+  
+  
+}
+
+img{
+ 
+  width: 100%;
+ height: 230px;
+  object-fit: cover;
+  
+overflow: hidden;
+}
+
+.input{
+width: 700px;
+justify-content: center;
+display: flex;
+align-items: center;
+  margin: 50px auto;
+}
+input{
+width: 600px;
+  padding: 12px 28px;
+  border: none;
+  font-size: 17px;
+  
+}
+input:focus{
+  color: rgb(81, 97, 91);
+}
+button{
+  padding: 12px 28px;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  font-size: 17px;
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container{
+
+  width: 450px;
+  text-align: left;
+
+}
+.img-container{
+
+margin: 40px;
+
+
+}
+
+.img-container img{
+
+  width: 320px;
+  height: 390px;
+  border-radius: 8px;
+}
+h1{
+
+  font-size: 48px;
+}
+#rating{
+
+  background-color: rgb(251, 251, 245);
+  display: inline-block;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+span{
+  
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+
+.loader {
+  border: 6px solid lightgrey;
+  border-radius: 50%;
+  border-top: 6px solid blue;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media(max-width:560px){
+
+.input{
+
+  width:350px;
+}
+
+input{
+
+  width: 250px;
+}
+
+.info-container{
+
+  width: 350px;
+  text-align: center;
+
+}
+
+.img-container{
+
+  margin: 20px;
+  
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+  .img-container img{
+
+    width: 320px;
+    height: 390px;
+    border-radius: 8px;
   }
+
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  span{
+  
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .main-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    }
+
+
+
+}
+
+.main-container{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ 
 }
