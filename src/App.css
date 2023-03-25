@@ -112,11 +112,15 @@ h1{
 span{
   
   display: flex;
-  align-items: center;
+ 
   font-size: 18px;
   margin-top: 4px;
 }
+span h3{
 
+
+  font-size: 22px;
+}
 
 .loader {
   border: 6px solid lightgrey;
@@ -182,11 +186,16 @@ input{
   span{
   
     display: flex;
-    align-items: center;
+    
     font-size: 18px;
     margin-top: 4px;
-    text-align: center;
+    
     justify-content: center;
+  }
+  span h3{
+
+
+    font-size: 22px;
   }
 
   .main-container{
